@@ -17,6 +17,7 @@ function App() {
     // fazendo assim com que não chame a api com um valor defaultt do seu estado de like
     if (!isFirstRender) {
       callAPI(isLiked);
+      
     }
   }, [debouncedValue])
 
